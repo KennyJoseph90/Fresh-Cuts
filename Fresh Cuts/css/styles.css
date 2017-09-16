@@ -1,0 +1,30 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  height: 20px;
+  width: 20px;
+  background-color: red; }
+
+nav ul {
+  display: flex; }
+
+nav li {
+  list-style-type: none;
+  padding: 0px 20px; }
+
+nav a {
+  color: white;
+  text-decoration: none; }
+
+.banner img {
+  height: 90vh;
+  width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */
