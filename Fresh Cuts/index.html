@@ -86,6 +86,32 @@
     <section class="contact">
         <h2>Contact</h2>
 
+<form class="form">
+    <label for="username">Name:</label>
+        <input type="text" name="username" id="username">
+    <label for="phone">Phone:</label>
+        <input type="number" name="number" id="number">
+    <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+    <label for="service">Which service would you like to book?</label>
+    
+    <select id="service">
+         <option value="" selected="selected"> - Services - </option>
+         <option value="Haircut">Haircut</option>
+         <option value="Haircut">Shave</option>
+         <option value="Haircut">Hair Coloring</option>
+         <option value="Haircut">Styling</option>
+         <option value="Haircut">Eyebrow Waxing</option>
+         <option value="Haircut">Line Up</option>
+         <option value="Haircut">Shampoo</option>
+         <option value="Haircut">Trim</option>
+    </select>
+
+        <input type="submit" name="send" value="send" id="send">
+
+</form>
+    
+    <p id="output">&nbsp;</p>
 <!--    Seemingly I have left this section for you.
 =================================================================
     -embed a google map
