@@ -1,3 +1,7 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2rem;
+}
 
 .logo {
 	color: white;
@@ -24,12 +28,12 @@ nav {
 		list-style-type: none;
 		display: inline-block;
 		padding: 0px 25px;
-		font-size: 20px;
 	}
 
 	a {
 		color: white;
 		text-decoration: none;
+		font-size:1.1rem;
 	}
 
 	li:hover {
@@ -49,6 +53,10 @@ nav {
 	justify-content: center;
 }
 
+.services, .rates, .book {
+	padding-bottom: 100px;
+}
+
 h1 {
 	font-size: 6rem;
 	color: white;
@@ -60,7 +68,7 @@ h1 {
 .services {
 	width: 100%;
 	height: auto;
-	
+	background-image: url('../images/concrete-texture.png');	
 }
 
 .services-box {
@@ -71,14 +79,21 @@ h1 {
 	align-content: flex-start;
 }
 
+.services > p {
+	margin: 0 auto;
+	width:85%;
+	padding-bottom: 60px;
+}
+
 .box {
 	height: 300px;
-	width: 25%;
+	width: 20%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	overflow: hidden;
+	margin: 20px;
 }
 
 h2 {
@@ -86,10 +101,9 @@ h2 {
 	font-size: 3rem;
 	width: 100%;
 	margin:0;
-	margin: 50px 0px;
-	padding: 30px 0px;
-
-
+	padding: 90px 0px;
+	color: black;
+	font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .box1{
@@ -123,11 +137,70 @@ h2 {
 }
 
 .box > p {
-	background: white;
+	color: white;
 	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.rates > p {
+.rates h2 {
+	color: white;
+}
+
+.rates {
+	background-color: black;
+}
+.rates-wrapper {
+	/* background-image: url('../images/blackboard.jpg'); */
+	padding: 5px 20px;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.rates-wrapper > p {
+	font-size: 2rem;
+	color: white;
+	font-family: 'Freckle Face', cursive;
+	line-height: 2rem;
+	text-align: center;
+}
+
+.location {
+	text-align: center;
+}
+
+table {
 	font-size: 1.3rem;
-	margin-left: 20px;
+	margin: 0 auto;
+}
+
+tr, td, table {
+	border: 1px solid black;
+}
+
+td {
+	padding: 20px;
+}
+
+tr {
+	background-color: lightgray;
+}
+
+tr:nth-of-type(odd) {
+	background: darkgray;
+}
+
+footer {
+	text-align: center;
+	padding: 5px;
+	background-color: #f6f6f6;
+	-webkit-box-shadow: 0px 2px 24px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 24px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 24px 0px rgba(0,0,0,0.75);
+	font-size: 1rem;
+}
+
+.calendly-inline-widget {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
 }
