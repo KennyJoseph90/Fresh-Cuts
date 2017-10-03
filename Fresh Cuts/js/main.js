@@ -1,3 +1,18 @@
+// menu
+
+ $(document).ready(function(){
+
+        $('.mobile-menu').click(function(){
+
+            $(".mobile-dropdown").slideToggle(700);
+
+        });
+
+    });
+
+
+
+
 //Form
 
 var userName = document.getElementById('username');
@@ -21,3 +36,6 @@ function formValue(){
 
 	return false;
 };
+
+
+

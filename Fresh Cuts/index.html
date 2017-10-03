@@ -1,63 +1,78 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display|Freckle+Face|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display|Freckle+Face|Raleway" rel="stylesheet">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-   
-   <section class="home" id="home">
-    <header>
-        <nav>
-            <a href="" class="logo">Fresh</a>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#rates">Prices</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#book">Book Now</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+ <div class="wrapper">
+     <section class="home" id="home">
+        <header>
+            <nav class="desktop-menu">
+                <a href="" class="logo">Fresh</a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#rates">Prices</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#book">Book Now</a></li>
+                </ul>
+            </nav> <!-- desktop-menu -->
+
+            <div class="mobile-menu">
+              <nav>
+                <a href="" class="logo">Fresh</a>
+                <ul class="mobile-dropdown">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#rates">Prices</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#book">Book Now</a></li>
+                </ul>
+                <button class="dropdown-link">menu</button>
+            </nav>
+
+        </div> <!-- end of mobile-menu -->
     </header>
 
-        <div class="banner">
-            <h1>Fresh Cuts</h1>
-        </div>
-    </section>
+    <div class="banner">
+        <h1>Fresh Cuts</h1>
+    </div> <!-- End of banner -->
+</section>  <!-- end of home section -->
+
+<section class="services" id="services">
+
+    <h2>Services</h2>
+
+    <p>Come visit our newly built barbershop right across from Metrotown and you will leave extremely satisfied. At Fresh Cuts, we offer all types of grooming services that will make you look your absolute best. All of our barbers are well-trained and offer quality service and great company. Don't forget to try our high quality products such as hair gels and shampoos. Come in for an experience of a life time and get the freshest cuts in town. </p>
+
+    <div class="services-box">
+        <div class="box box1"><p>Haircut</p></div>
+        <div class="box box2"><p>Shave</p></div>
+        <div class="box box3"><p>Hair Coloring</p></div>
+        <div class="box box4"><p>Styling</p></div>
+        <div class="box box5"><p>Eyebrow Waxing</p></div>
+        <div class="box box6"><p>Line Up</p></div>
+        <div class="box box6"><p>Shampoo</p></div>
+        <div class="box box6"><p>Trim</p></div>
+    </div>
     
-    <section class="services" id="services">
+</section>  <!-- end of services section  -->
 
-        <h2>Services</h2>
-
-        <p>Come visit our newly built barbershop right across from Metrotown and you will leave extremely satisfied. At Fresh Cuts, we offer all types of grooming services that will make you look your absolute best. All of our barbers are well-trained and offer quality service and great company. Don't forget to try our high quality products such as hair gels and shampoos. Come in for an experience of a life time and get the freshest cuts in town. </p>
-
-        <div class="services-box">
-            <div class="box box1"><p>Haircut</p></div>
-            <div class="box box2"><p>Shave</p></div>
-            <div class="box box3"><p>Hair Coloring</p></div>
-            <div class="box box4"><p>Styling</p></div>
-            <div class="box box5"><p>Eyebrow Waxing</p></div>
-            <div class="box box6"><p>Line Up</p></div>
-            <div class="box box6"><p>Shampoo</p></div>
-            <div class="box box6"><p>Trim</p></div>
-       </div>
-        
-    </section>
-
-    <section class="rates" id="rates">
-        
+<section class="rates" id="rates">
+    
     <h2>Prices</h2>
 
     <div class="rates-wrapper">
@@ -73,24 +88,14 @@
         <p>Trim - $15.00</p>
     </div>
 
-    </section>
+</section> <!-- end of rate section -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-    <section class="contact" id="contact">
+<section class="contact" id="contact">
   
     <h2>Contact</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.6505729277415!2d-123.0013018842033!3d49.22615358269512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676595c5fb407%3A0x70139844bf95bfa5!2sMetropolis+at+Metrotown!5e0!3m2!1sen!2sca!4v1505716743802" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.6505729277415!2d-123.0013018842033!3d49.22615358269512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676595c5fb407%3A0x70139844bf95bfa5!2sMetropolis+at+Metrotown!5e0!3m2!1sen!2sca!4v1505716743802" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
     <div class="location">
         <h3>Check Us Out</h3>
@@ -98,72 +103,81 @@
         <p>604 999 9999</p>
         <table>
             <tbody>
-            <tr>
-            <td>Monday &nbsp;</td>
-            <td>10:00am to 6:00pm &nbsp;</td>
-            </tr>
-            <tr>
-            <td>Tuesday &nbsp;</td>
-            <td>10:00am to 6:00pm &nbsp;</td>
-            </tr>
-            <tr>
-            <td>Wednesday &nbsp;</td>
-            <td>10:00am to 6:00pm &nbsp;</td>
-            </tr>
-            <tr>
-            <td>Thurday &nbsp;</td>
-            <td>10:00am to 6:00pm &nbsp;</td>
-            </tr>
-            <tr>
-            <td>Friday &nbsp;</td>
-            <td>10:00am to 6:00pm &nbsp;</td>
-            </tr>
-            <tr>
-            <td>Satuday &nbsp;</td>
-            <td>9:00am to 5:00pm &nbsp;</td>
-            </tr>
-            <tr>
-            <td>Sunday &nbsp;</td>
-            <td>11:00am to 4:00pm &nbsp;</td>
-            </tr>
+                <tr>
+                    <td>Monday &nbsp;</td>
+                    <td>10:00am to 6:00pm &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Tuesday &nbsp;</td>
+                    <td>10:00am to 6:00pm &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Wednesday &nbsp;</td>
+                    <td>10:00am to 6:00pm &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Thurday &nbsp;</td>
+                    <td>10:00am to 6:00pm &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Friday &nbsp;</td>
+                    <td>10:00am to 6:00pm &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Satuday &nbsp;</td>
+                    <td>9:00am to 5:00pm &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Sunday &nbsp;</td>
+                    <td>11:00am to 4:00pm &nbsp;</td>
+                </tr>
             </tbody>
         </table>
 
         <p>* Closed on statutory holidays</p>
-            
+        
     </div>
     
-    </section>
+</section> <!-- end of contact section -->
 
-    <section class="book" id="book">
+<section class="book" id="book">
     <h2>Book Now</h2>
     
 
     <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/kenny_619" style="min-width:320px;height:580px;"></div>
-<script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/kenny_619" style="min-width:320px;height:580px;"></div>
+    <script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
+    <!-- Calendly inline widget end -->
 
-</section>
+</section> <!-- end of book section -->
 
 
-    <footer>
-        <p>Fresh Cuts &copy 2017 </p>
-    </footer>
+<footer>
+    <p>Fresh Cuts &copy 2017 </p>
+</footer>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+
+
+</div> <!-- end of wrapper  -->
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+
+
+
+   
+</script>
+</body>
 </html>

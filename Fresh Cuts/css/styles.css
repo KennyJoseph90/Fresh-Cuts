@@ -1,6 +1,15 @@
+.wrapper {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem; }
+  font-size: 1.2rem; 
+  margin-left: 0px;
+}
 
 .logo {
   color: white;
@@ -11,12 +20,15 @@ body {
 
 nav {
   position: fixed;
-  top: 0;
+  top: 5px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding-top: 10px;
+  z-index: 10000;
+   }
   nav ul {
     display: flex; }
   nav li {
@@ -29,6 +41,12 @@ nav {
     font-size: 1.1rem; }
   nav li:hover {
     background-color: grey; }
+
+
+.mobile-menu {
+
+  display: none;
+}
 
 .banner {
   background-image: url("../images/barber.jpeg");
@@ -65,7 +83,10 @@ h1 {
 .services > p {
   margin: 0 auto;
   width: 85%;
-  padding-bottom: 60px; }
+  padding-bottom: 60px; 
+  text-align: justify;
+
+}
 
 .box {
   height: 300px;
@@ -113,13 +134,19 @@ h2 {
 .box > p {
   color: white;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8); 
+  width: 80%;
+  text-align: center;
+}
 
 .rates h2 {
   color: white; }
 
 .rates {
-  background-color: black; }
+  background-color: black; 
+  width: 100%;
+  padding-right: 8px;
+}
 
 .rates-wrapper {
   /* background-image: url('../images/blackboard.jpg'); */
@@ -160,7 +187,9 @@ footer {
   -webkit-box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.75);
-  font-size: 1rem; }
+  font-size: 1rem; 
+  font-weight: bold;
+}
 
 .calendly-inline-widget {
   width: 80%;
@@ -168,3 +197,267 @@ footer {
   border: 1px solid black; }
 
 /*# sourceMappingURL=styles.css.map */
+
+@media only screen and (max-width: 1200px) {
+
+  .rates-wrapper {
+
+    width: 38%;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+  .services > p {
+
+    font-size: 28px;
+  }
+
+  .box > p {
+
+    font-size: 20px;
+  }
+
+  .rates-wrapper {
+
+    width: 50%;
+  }
+
+  .rates-wrapper >p {
+
+    font-size: 32px;
+  }  
+
+  footer > p  {
+
+    font-size: 28px;
+  }
+
+
+}
+
+@media only screen and (max-width: 970px) {
+
+  .box {
+
+    width: 26%;
+  }
+
+@media only screen and (max-width: 768px) {
+
+  .services> p {
+
+    font-size: 24px;
+  }
+
+  .box {
+
+    width: 25%;
+  }
+
+  .box > p {
+
+    font-size: 18px;
+  }
+
+  .rates-wrapper {
+
+    width: 59%;
+  }
+
+  .rates-wrapper> p {
+
+    font-size: 28px;
+  }
+
+  footer {
+
+    font-size: 25px;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .desktop-menu {
+
+    display: none;
+  }
+
+  .mobile-menu {
+
+   display: block;
+   position: fixed;
+   padding: 0;
+   height: auto;
+   z-index: 9999;
+   width: 100%;
+   line-height: 50px;
+   user-select: none;
+  }
+
+  .mobile-menu .dropdown-link {
+
+    display: block;
+    height: 33px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    margin-right: 24px;
+    border: 1px solid white;
+    -webkit-box-shadow: 2px 3px 3px -1px rgba(250,245,250,1);
+    -moz-box-shadow: 2px 3px 3px -1px rgba(250,245,250,1);
+    box-shadow: 2px 3px 3px -1px rgba(250,245,250,1);
+  }
+
+  .mobile-dropdown {
+
+    display: none;
+
+  }
+
+
+  .mobile-dropdown li {
+    height: 40px;
+  }
+
+  .mobile-dropdown li a {
+
+    font-size: 11px;
+  }
+
+  .services >p {
+
+    font-size: 22px;
+  }
+
+  .box {
+
+    width: 28%;
+  }
+
+@media only screen and (max-width: 550px) {
+
+  .banner h1 {
+
+    font-size: 5rem;
+  }
+
+  .rates-wrapper {
+
+    width: 80%;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 414px) {
+
+  nav {
+    display: inline-block;
+  }
+
+  .logo {
+
+    float: left;
+  }
+
+  .mobile-dropdown {
+
+    width: 52%;
+    float: left;
+    margin-top: 26px;
+    margin-left: -21px;
+  }
+
+  .mobile-dropdown li a {
+
+    font-size: 16px;
+  }
+  .mobile-menu .dropdown-link {
+
+    float: right;
+    margin-top: 8px;
+  }
+
+  .banner h1 {
+
+    font-size: 4rem;
+  }
+
+  .services >p {
+
+    font-size: 15px;
+  }
+
+  .box {
+
+    width: 35%;
+  }
+
+  .box >p {
+
+    font-size: 14px;
+  }
+
+  .rates {
+
+    padding-bottom: 10px;
+  }
+
+  .rates h2 {
+
+    padding-bottom: 10px;
+  }
+
+  .rates-wrapper {
+
+    width: 78%;
+  }
+
+  .rates-wrapper >p {
+
+    font-size: 25px;
+  }
+
+  footer > p {
+
+    font-size: 15px;
+  }
+} 
+
+
+@media only screen and (max-width: 375px) {
+
+ .mobile-dropdown {
+
+  width: 54%;
+  margin-left: -37px;
+ } 
+
+ .mobile-dropdown li a {
+
+  font-size: 14px;
+ }
+
+ .mobile-menu .dropdown-link {
+
+  margin-right: 18px;
+ }
+}
+
+.box {
+
+  width: 38%;
+}
+
+
+
+}
