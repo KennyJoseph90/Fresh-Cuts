@@ -34,13 +34,16 @@ nav {
   nav li {
     list-style-type: none;
     display: inline-block;
-    padding: 0px 25px; }
+    padding: 0px 22px; }
   nav a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem; }
   nav li:hover {
-    background-color: grey; }
+    background-color: black;
+    border:1px solid white;
+    border-radius: 15px;
+     }
 
 
 .mobile-menu {
@@ -324,12 +327,13 @@ footer {
 
 
   .mobile-dropdown li {
-    height: 40px;
+    height: 50px;
+    padding: 11px;
   }
 
   .mobile-dropdown li a {
 
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .services >p {
@@ -340,6 +344,28 @@ footer {
   .box {
 
     width: 28%;
+  }
+
+  @media only screen and (max-width: 645px) {
+
+    .mobile-dropdown li {
+
+      padding: 10px;
+    }
+
+    .mobile-dropdown li a {
+
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+
+     .mobile-dropdown li {
+
+      padding: 6px;
+    }
+
   }
 
 @media only screen and (max-width: 550px) {
@@ -354,6 +380,10 @@ footer {
     width: 80%;
   }
 
+   .mobile-dropdown li {
+
+      padding: 9px;
+    }
 
 
 }
@@ -374,12 +404,12 @@ footer {
     width: 52%;
     float: left;
     margin-top: 26px;
-    margin-left: -21px;
+    margin-left: -30px;
   }
 
   .mobile-dropdown li a {
 
-    font-size: 16px;
+    font-size: 14px;
   }
   .mobile-menu .dropdown-link {
 
